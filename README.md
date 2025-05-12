@@ -1,13 +1,75 @@
-# React + Vite
+# 💻 SoftSell — Software License Resale Platform \
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SoftSell is a fictional web platform that allows users to **resell unused software licenses** securely. This project includes a **responsive 1-page frontend** and a **Flask backend chatbot** powered by OpenAI GPT to answer user queries.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features Implemented
 
-## Expanding the ESLint configuration
+### ✅ Frontend (Responsive Landing Page)
+Built with **HTML + Tailwind CSS**, this 1-page website includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# SoftSell
+1. **Hero Section**
+   - **Headline**: "Turn Unused Software Into Instant Cash"
+   - **Subheading**: "Sell or Buy software licenses easily and legally with SoftSell."
+   - **CTA Button**: “Sell My Licenses”
+
+2. **How It Works**
+   - Step 1: 📤 **Upload License**
+   - Step 2: 📊 **Get Valuation**
+   - Step 3: 💸 **Get Paid**
+
+3. **Why Choose Us**
+   - ✅ 100% Legal and Secure Resales
+   - 🔍 Verified Licenses Only
+   - ⚡ Fast Payouts (within 3–5 business days)
+   - 💬 AI Assistant Support (OpenAI GPT integration)
+
+4. **Customer Testimonials**
+   - **Anna Gupta**, IT Admin at CloudByte: *“SoftSell helped us recover thousands in unused licenses!”*
+   - **Michael Ray**, CFO at BrightApps: *“Fast, simple, and secure resale process. Highly recommend.”*
+
+5. **Contact / Lead Form**
+   - Fields: Name, Email, Company, License Type (dropdown), Message
+   - **Frontend validation only**
+
+---
+
+### ✅ Backend (Flask + OpenAI Chatbot)
+
+- **Flask API** (`/chat`) handles incoming user queries
+- First checks for **hardcoded FAQ-style responses**
+- If not found, falls back to **OpenAI GPT-3.5** for intelligent replies
+- CORS enabled for frontend on `http://localhost:5173`
+
+---
+
+## 🎨 Design Choices
+
+- **Framework**: Tailwind CSS for fast styling and responsiveness
+- **Color Palette**: Soft blue + neutral grays for professional and calming feel
+- **Font**: Modern sans-serif (e.g., Inter, Roboto)
+- **Layout**: Clean sections with strong spacing and hierarchy
+- Icons sourced via [Heroicons](https://heroicons.com/) / Tailwind UI
+
+---
+
+## 🕒 Time Spent
+
+| Task | Time |
+|------|------|
+| Frontend layout & styling | 4.5 hours |
+| Backend API & OpenAI integration | 2 hours |
+| Testing & tweaks (mobile) | 1 hour |
+| Total | **~7.5 hours** |
+
+---
+
+## 🛠️ How to Run
+
+### 🔧 Backend
+
+1. Clone the repo and install dependencies:
+   ```bash
+   pip install flask flask-cors openai python-dotenv
+```bash
