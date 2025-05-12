@@ -43,6 +43,10 @@ Built with **HTML + Tailwind CSS**, this 1-page website includes:
 - CORS enabled for frontend on `http://localhost:5173`
 
 ---
+### Live Preview
+
+https://github.com/user-attachments/assets/73f98cc7-7789-445b-acbd-13f0f8502abd
+
 
 ## 🎨 Design Choices
 
@@ -66,10 +70,20 @@ Built with **HTML + Tailwind CSS**, this 1-page website includes:
 ---
 
 ## 🛠️ How to Run
-
+###  Frontend
+Run react:
+```bash
+npm run dev
+```
 ### 🔧 Backend
 
 1. Clone the repo and install dependencies:
    ```bash
    pip install flask flask-cors openai python-dotenv
+2.Set your OpenAI API key:
 ```bash
+   export OPENAI_API_KEY="your-api-key-here"
+```
+3.Run Flask app:
+```bash
+python app.py
