@@ -1,4 +1,4 @@
-# 💻 SoftSell — Software License Resale Platform \
+# 💻 SoftSell — Software License Resale Platform 
 
 SoftSell is a fictional web platform that allows users to **resell unused software licenses** securely. This project includes a **responsive 1-page frontend** and a **Flask backend chatbot** powered by OpenAI GPT to answer user queries.
 
